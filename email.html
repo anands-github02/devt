@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freshers Hiring Email</title>
+  <style>
+    body {
+      font-family: 'Helvetica', Arial, sans-serif;
+      background-color: #fbfdff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      /* background: #eeeded; */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      /* background-blend-mode: overlay; */
+      /* background-image: url('https://img.freepik.com/premium-photo/small-grey-blue-squares-abstract-background_88343-15433.jpg?w=826'); */
+    }
+
+    .header {
+      text-align: center;
+      padding: 10px;
+      /* background: linear-gradient(90deg, #204465, #ffd700); */
+      background-color: #003566;
+      color: #fff;
+      font-size:24px;
+    }
+
+    .header img {
+      /* max-width: 150px; */
+      /* height: auto; */
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .content h2 {
+      color: #003566;
+      margin-top: 20px;
+      border-bottom: 2px solid #ffd700;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .content h3 {
+      color: #003566;
+      margin-top: 20px;
+      /* border-bottom: 2px solid #ffd700; */
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .content p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #003566;
+      font-weight: bold;
+    }
+
+    .table-container {
+      /* margin: 20px 0; */
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table th,
+    table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #003566;
+      color: #ffffff;
+    }
+
+    table td {
+      background-color: #f9f9f9;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+
+    ul li {
+      margin: 5px 0;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .cta a {
+      background-color: #003566;
+      color: #f6f7f7;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #09105e;
+    }
+
+    .footer {
+      background-color: #003566;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 11px;
+    }
+
+    a {
+      color: #003566;
+    }
+
+    .marquee-container {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .marquee-content {
+      display: inline-block;
+      animation: marquee 30s linear infinite;
+    }
+
+    .marquee-content img {
+      margin-right: 10px;
+      width: 100px;
+      height: 100px;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(100%);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .adj {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* Ensures both elements are the same height */
+    justify-content: center;
+    width: 100%;
+  }
+
+  .adj img {
+    width: 40%;
+    min-width: 300px;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    height: auto;
+    max-height: 100%; /* Ensures it adjusts with the table */
+  }
+
+  .adj table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 60%;
+    min-width: 300px;
+    /* margin: 20px; */
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .adj th, .adj td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .adj th {
+    background: linear-gradient(90deg, #cac9c9, #a3a3a3);
+    color: white;
+    border-bottom: 3px solid #f0f0f0;
+  }
+
+  .adj td:first-child {
+    font-weight: bold;
+    color: white;
+  }
+
+  .adj tbody tr td:first-child {
+    background-color: #f78103;
+  }
+
+  .adj tbody tr:nth-child(2) td:first-child {
+    background-color: #4a7b22;
+  }
+
+  .adj tbody tr:nth-child(3) td:first-child {
+    background-color: #214269;
+  }
+
+  .adj tbody tr:nth-child(4) td:first-child {
+    background-color: #eb58a2;
+  }
+
+  .adj tbody tr:nth-child(5) td:first-child {
+    background-color: #53dff4;
+  }
+
+    @media (max-width: 700px) {
+      .adj {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div>Greetings from Pentagon Space!</div>
+      <!-- <img src="https://media.licdn.com/dms/image/v2/D5616AQHrbyPOHed8Tg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1724930005898?e=1737590400&v=beta&t=_eROjxIiGIIWVGQ72mJrc_zaXvzYNZcU1gbh3lB8LDU" alt="Page Image" style="width:100%; height:200px;" /> -->
+
+    </div>
+    <div class="content">
+      <p>Hello <strong>Suraj</strong>,</p>
+      <p>Hope you are doing well.</p>
+      <p>We are pleased to introduce <a target="_blank" href="https://www.pentagonspace.in">Pentagon Space</a>, a
+        leading finishing school providing industry-ready freshers trained in modern technologies. Our goal is to
+        simplify your hiring process and supply skilled talent at <b>ZERO cost.</b></p>
+
+      <h2>About Us</h2>
+      <p><a target="_blank" href="https://www.pentagonspace.in">Pentagon Space</a> bridges the gap between academic
+        learning and industry needs through rigorous<b> ‘Campus to Corporate’</b> programs. Our students are trained
+        with a strong foundation in technologies like <b>Java Full Stack, Python Full Stack, MERN Stack, and Software
+          Testing.</b></p>
+      <p>With our proven learning techniques and Formative Assessment method, we ensure that the trainees have a
+        complete end-to-end understanding of the technology they are trained on. </p>
+      <!-- <h2>Our Offerings</h2>
+            <img src="https://campaign-image.in/zohocampaigns/87365000000402372_zc_v40_1652696887674_info.jpg" alt="Our Offerings" style="max-width: 100%; width:800px; height: auto;">
+            <ul>
+                <li>Pre-screened candidates with academic excellence</li>
+                <li>Dedicated delivery managers for smooth coordination</li>
+                <li>Ample talent pool availability for immediate hiring</li>
+            </ul> -->
+
+      <!-- <h2>Pool Availability</h2> -->
+      <!-- <img src="./image.jpg" alt="Google Drive Image" style="width:300px;"/> -->
+      <!-- <img src="https://mail.google.com/mail/u/2?ui=2&ik=d2d61f2881&attid=0.2&permmsgid=msg-f:1816229912113868957&th=19348b7b75fc709d&view=fimg&fur=ip&permmsgid=msg-f:1816229912113868957&sz=s0-l75-ft&attbid=ANGjdJ_gu_4_jehLyelFBGppR3Kk-DrwPacZgotqB2E4rz9Vgz9pZXo2PSO2tpvCU2n8yPlLuSVzACk7uyexLUe9y2FgBBzWNQmZVYX5FT870Jtp_kpXxm8qa0Fj0yQ&disp=emb&realattid=ii_m3o6mfdf0&zw" alt="Embedded Image" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"> -->
+      <!-- <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Available Resources</th>
+                            <th>Offered Till Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Java Full Stack</td>
+                            <td>1600+</td>
+                            <td>3487</td>
+                        </tr>
+                        <tr>
+                            <td>Python Full Stack</td>
+                            <td>800+</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Software Testing</td>
+                            <td>300+</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> -->
+
+      <!-- <div class="marquee-container">
+                <div class="marquee-content">
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+                    <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w400" alt="Page Image"  />
+
+                </div>
+            </div> -->
+
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Pre-screened and assessed candidates</li>
+        <li>Quick hiring turnaround time (TAT within 24 hours)</li>
+        <li>Seamless engagement with dedicated managers</li>
+      </ul>
+      <div>
+        <h3>Explore Our Corporate Deck - <span class="cta"><a target="_blank"
+              href="https://drive.google.com/file/d/1sn3_4rk5Fve1kMexzhCOS6pWzBxyPP1S/view?usp=drive_link"> Click
+              Here</a></span></h3>
+      </div>
+      <div class="adj">
+        <img src="https://drive.google.com/thumbnail?id=1J9ca_tXPhujJ6ulS2XHgjlht-natZwTh&sz=w300" alt="Page Image" />
+      
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Generic Crowd</td>
+              <td>2025 freshers from associated colleges</td>
+            </tr>
+            <tr>
+              <td>Java Fullstack</td>
+              <td>Java, J2EE, Spring, Spring Boot, Microservices, Web Technologies, Database</td>
+            </tr>
+            <tr>
+              <td>Python Fullstack</td>
+              <td>Python, Django, REST API, Web Technologies, Database</td>
+            </tr>
+            <tr>
+              <td>MERN Stack</td>
+              <td>Web Technologies, MongoDB, ExpressJS, ReactJS, NodeJS</td>
+            </tr>
+            <tr>
+              <td>Software Testing</td>
+              <td>Java or Python, SQL, Web Technologies, Manual Testing, Automation Testing (Selenium)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <h2>Here's What We Provide</h2>
+      <p><b>Experience the coolest way of hiring in your life!!!</b> </p>
+
+
+
+      <br />
+
+      <ul>
+        <li>
+          <p><b>Pool of 1000+ graduates:</b> We will have a pool of 1000+ graduates undergoing training at any time in a
+            year.</p>
+        </li>
+        <li>
+          <p><b>Pre-screened/Pre-assessed candidates:</b> Pick the candidates who are pre-screened/pre-assessed on
+            particular skill sets.</p>
+        </li>
+        <li>
+          <p><b>Team coordination:</b> Our team members will coordinate with you throughout the hiring process.</p>
+        </li>
+        <li>
+          <p><b>Dedicated engagement manager:</b> A dedicated engagement manager will support and coordinate the hiring
+            event.</p>
+        </li>
+        <li>
+          <p><b>24hrs TAT:</b> All these will be executed within 24hrs of maximum turnaround time (TAT).</p>
+        </li>
+      </ul>
+
+
+      <h2>We Also Offer</h2>
+      <ul>
+        <li>
+          <p><b>Customised Training Programs </b>: We offer tailored training solutions to meet specific technology
+            requirements, ensuring your team is equipped with the skills they need for success.</p>
+        </li>
+
+        <li>
+          <p><b>Hire-Train-Deploy Model </b>: Our 'Hire-Train-Deploy' model streamlines your workforce onboarding
+            process. You hire, we provide targeted training, and then deploy the candidates to meet your organizational
+            needs.</p>
+        </li>
+
+        <li>
+          <p><b>Campus Recruitment Support </b>: We assist in campus drives through our network of associated colleges
+            across India, helping you tap into a pool of fresh, talented graduates.</p>
+        </li>
+
+        <li>
+          <p><b>Lateral Hiring Support </b>: We specialize in lateral hiring, providing experienced professionals with
+            the expertise needed to contribute immediately to your organization’s growth.</p>
+        </li>
+        </li>
+
+        <h2>Our Happy Clients</h2>
+        <p>We have successfully placed <b>6500+</b> students in reputed companies</p>
+        <br />
+        <div style="display:flex; gap:10px; flex-wrap: wrap; justify-content: center; max-width:1080px;margin-bottom:12px;">
+          <img src="https://drive.google.com/thumbnail?id=1ZPbnZtomCQqW4CggH8s2U9soVizIqDSj" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1AGdPUQcbKMZ8JRGHf5vVREdkVpgoWkyr" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1yxx7rgint9RLYdWM43Q4Yh-wvYOpEfTh" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1NJydbyz-GA96xNvaHGv2Td4uhT6elf97" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1r5lYKRz3mrtENMG1vnsO7S-2iOKld5lz" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1rArMQjqPY2L7kOX5Z0UrzfIIg3eJ1E6b" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1-BLpCLgSFp73RUOnkdmH-RHzS5J2naKR" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+            <img src="https://drive.google.com/thumbnail?id=140PYwTnRzw6xZQh5d3jwnctTR5th2lDQ" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap: wrap; justify-content: center; max-width:1080px;margin-bottom:12px;">
+
+         <img src="https://drive.google.com/thumbnail?id=1e5RsHwuxTbzkxVmcFv7m00CLUZVifDKE" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1fV3f5uP7LzcLgPoRLmr2QbmgUW-EBxsT" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=13K6ncYEvGrwuhjmDRrrlORmvSxkQxFS0" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1ggpH3reKeuuvlp2UfkWB4_QUj1ddvAC_" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1VJpTjxsKZ6ZNuIL2_w7VWYGJvekvnrVn" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1ZZTfFaZ2G1KSr2Zg89R17-JzAyQshuC9" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1wvSeqXsh1kI23lVjoSPjKsj8YjqWuKHK" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1YAvnwhNNeJaRuTRsndHdSO_J9yFRKBxZ" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap: wrap; justify-content: center; max-width:1080px;margin-bottom:12px;">
+              <img src="https://drive.google.com/thumbnail?id=1CdRdzFXJ6QqhP7ZPTJQ6L3iOmV58cQcz" alt="Page Image"
+              style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1xVGA-IB7DIJ7zxLmdUxTeV8hdkl9mmcL" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1xetEOx_l4x5jnUV5tpY4Zyu19lkoynGa" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1ABKOb3cX_MqY9fQXjh-QZYVuocIKrPJO" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1lsGTAnUq51D_p76A6VFNsjHe8EBOk27m" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1lffWgQ8Ea0kLF15l_rXYoWoJpQeDuVKx" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=1eecGahvxDjAEdDx84WLJvaq2lgYOQOE-" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+          <img src="https://drive.google.com/thumbnail?id=166r_CMpn2pliXg_jZ5dTHKitm9Lrdkec" alt="Page Image"
+            style="width:70px; height:50px;margin-right:12px;" />
+
+
+        </div>
+        <br />
+
+        <h2>Contact Us</h2>
+        <p>We look forward to supporting your On-Campus and Off-Campus hiring needs for 2022-2025 batches. Kindly
+          confirm your requirements and event details at your earliest convenience.</p>
+
+        <div class="cta">
+          <a href="mailto:sharan.kr@pentagonspace.in">Contact Us Now</a>
+        </div>
+        <p style="font-size:12px"><strong>Sharan K R</strong><br>
+          Business Development Manager - Pentagon Space<br>
+          <a href="mailto:sharan.kr@pentagonspace.in">sharan.kr@pentagonspace.in</a> | +91-9480535017<br>
+          <a href="https://www.pentagonspace.in" target="_blank">www.pentagonspace.in</a>
+          </p>
+        <div>
+          <a target="_blank" href="https://www.instagram.com/pentagon_space/"><img
+              src="https://drive.google.com/thumbnail?id=1ks512qvX0llF16reErfODObKyajMMsu3" alt="Insta"
+              style="width:30px; height:30px;margin-right:20px;" /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/sharan-gowda-2a832b1ab/"> <img
+              src="https://drive.google.com/thumbnail?id=1TYn4flUQYRrUQOReVUAmdVyzygx8O5Rc" alt="LinkedIn"
+              style="width:30px; height:30px; margin-right:20px" /></a>
+          <a target="_blank" href="https://www.pentagonspace.in"> <img
+              src="https://drive.google.com/thumbnail?id=1zGG9sPKgjSnjsT0va6T8unbsAkmg961K" alt="pentgon"
+              style="width:30px; height:30px; margin-right:20px" /></a>
+              <!-- https://drive.google.com/file/d/1zGG9sPKgjSnjsT0va6T8unbsAkmg961K/view?usp=drive_link -->
+          <!-- insta - https://drive.google.com/file/d/1ks512qvX0llF16reErfODObKyajMMsu3/view?usp=drive_link
+                  Linkdin - https://drive.google.com/file/d/1TYn4flUQYRrUQOReVUAmdVyzygx8O5Rc/view?usp=drive_link
+                  manymore - https://drive.google.com/file/d/166r_CMpn2pliXg_jZ5dTHKitm9Lrdkec/view?usp=drive_link -->
+          <!-- - https://drive.google.com/file/d/166r_CMpn2pliXg_jZ5dTHKitm9Lrdkec/view?usp=drive_link -->
+          <!-- Many - https://drive.google.com/file/d/1vPPMgKCmf5w-xphSRs0H2DrnvCsKPVou/view?usp=drive_link
+                  pslogo - https://drive.google.com/file/d/1InQ2FgkvdEdthjfcjqSxOun3GD-xF28p/view?usp=drive_link -->
+        </div>
+        <div>
+          <a target="_blank" href="https://www.pentagonspace.in"> <img
+              src="https://drive.google.com/thumbnail?id=1InQ2FgkvdEdthjfcjqSxOun3GD-xF28p" alt="Page Image"
+              style="width:180px; height:40px; margin-top:16px;" /></a>
+          <!-- </a><img src="https://drive.google.com/thumbnail?id=1DZJcllMF0mV8qsK2Iofn0TS4bR-xam1s" alt="Page Image" style="width:200px; height:50px;margin-right:12px;" /></a> -->
+
+          <!-- https://drive.google.com/file/d/1DZJcllMF0mV8qsK2Iofn0TS4bR-xam1s/view?usp=drive_link -->
+        </div>
+        </p>
+    </div>
+    <div class="footer">
+      © 2024 Pentagon Space. All rights reserved.
+    </div>
+  </div>
+</body>
+
+</html>
